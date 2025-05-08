@@ -1,0 +1,188 @@
+/* Background warna */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #ffc0cb, #e6e6fa);
+  font-family: 'Baloo 2', cursive;
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Container utama */
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+/* Judul */
+h1 {
+  color: #d36ad6;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+/* Paragraf */
+p {
+  color: #8a2be2;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Tombol lucu */
+.cute-button {
+  background-color: #ffb6c1;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efek hover: levitation */
+.cute-button:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  background-color: #ff8ab8;
+}
+
+/* Emoji style */
+.emoji {
+  font-size: 1.5em;
+}
+
+/* Sparkles (bintang kecil) */
+.sparkles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: url('https://i.ibb.co/tPxCY6r/sparkle.png'); 
+  /* Sparkle kecil transparan */
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  opacity: 0.4;
+  animation: sparkleMove 20s linear infinite;
+}
+
+/* Animasi sparkles */
+@keyframes sparkleMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 500px 500px;
+  }
+}
+
+body {
+  font-family: 'Baloo 2', cursive;
+  background-color: #fff9f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #444;
+  text-align: center;
+}
+
+.emoji {
+  font-size: 1.5em;
+}
+
+marquee {
+  font-weight: bold;
+  color: #ff69b4;
+  font-size: 40px;
+  margin-bottom: 1px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Tombol */
+.cute-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.cute-button:hover {
+  background-color: #ff6f91;
+}
+
+/* Bagian fakta ilmiah */
+.facts {
+  background-color: #fff0f5;
+  border: 2px dashed #ffb6c1;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.facts h2 {
+  margin-top: 0;
+  color: #c71585;
+  text-align: center;
+}
+
+.facts ul {
+  list-style-type: '✨ ';
+  padding-left: 20px;
+  font-size: 1em;
+}
+
+.facts li {
+  margin-bottom: 10px;
+}
+
+.sparkles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.3;
+  pointer-events: none;
+  animation: sparkleMove 10s linear infinite;
+}
+
+@keyframes sparkleMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 100px 100px; }
+}
